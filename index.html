@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generator map</title>
+    <meta name="author" content="Filip Ziarko">
+    <script src="./dist/main.js" type="module"></script>
+</head>
+<body>
+    <h3 style="color: white;">ITEMS</h3>
+    <input type="checkbox" name="automat" id="automat">
+    <label for="automat" style="color: white;">automat</label>
+    <div class="disp">
+        <div class="rzeczy" id="rzeczy"></div>
+        <div class="mapa" id="mapa">
+            <div id="pole"></div>
+        </div>
+
+    </div>
+    <div id="menu">
+        <button id="Undo">Undo</button>
+        <button id="Redo">Redo</button>
+        <button id="Cut">Cut</button>
+        <button id="Copy">Copy</button>
+        <button id="Paste">Paste</button>
+        <button id="Delete">Delete</button>
+        <button id="Save">Save to file</button>
+        <button id="Load">Load data from file</button>
+    </div>
+    <input type="file" id="blob" style="display: none;">
+</body>
+</html>

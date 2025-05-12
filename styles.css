@@ -1,0 +1,52 @@
+* {
+    user-select: none;
+}
+
+body {
+    background: black;
+}
+.disp {
+    display: flex;
+}
+.rzeczy {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.mapa{
+    position: relative;
+    margin: 0 30px;
+}
+
+.plytka {
+    background-size: 1024px 640px;
+    box-sizing: border-box;
+    background-position: -3px -67px;
+    border: 2px dashed aliceblue;
+    margin: 2px;
+    width: 31px;
+    height: 31px;
+    background-image: url("./sprites.png");
+}
+.plytka:hover{
+    border-color: red !important;
+}
+
+#pole {
+    z-index: 2;
+    background: yellow;
+    opacity: 0.6;
+    position: absolute;
+    
+}
+
+#menu{
+    position: absolute;
+    display: none;
+    z-index: 2;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+}
+#menu>button:hover{
+    background: darkgray;
+}
